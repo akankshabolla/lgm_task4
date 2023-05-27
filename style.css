@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to right,rgb(181, 236, 180), #56f347);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    width: 25%;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: right;
+    box-shadow: 0 0 6px 4px rgba(0,0,0,0.5);
+}
+
+.display{
+    width: 100%;
+    height: 20vh;
+    background: rgba(255, 253, 253, 0.68);
+    color: rgb(15, 1, 1);
+
+}
+
+.input{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button{
+    border:none;
+    background-color: rgb(2, 2, 19);
+    color: blanchedalmond;
+    padding:1.6rem;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    font-weight: bold;
+}
+
+
+.output{
+    font-size: 20px;
+    padding: 15px;
+}
+
+.result{
+    font-size: 20px;
+    padding: 15px;
+}
+
+@keyframes big{
+    0%{
+        font-size: 18px;
+    }
+    100%{
+        font-size: 30px;
+    }
+}
+
+@keyframes small{
+    0%{
+        font-size: 28px;
+    }
+    100%{
+        font-size: 18px;
+    }
+}
